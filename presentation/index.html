@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0d3150" />
+    <title>Kenali, Jaga, dan Cegah</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main id="app" class="presentation" data-asset-root="assets/pics" aria-live="polite">
+      <div class="topbar">
+        <div class="brand">KENALI <span></span> JAGA <span></span> CEGAH</div>
+        <div id="slide-counter" class="slide-counter"></div>
+      </div>
+
+      <section id="stage" class="stage" aria-label="Materi presentasi"></section>
+
+      <div class="progress-track" aria-hidden="true">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+
+      <nav class="controls" aria-label="Navigasi presentasi">
+        <button id="prev-button" class="control-button secondary" type="button" aria-label="Slide sebelumnya">
+          <span aria-hidden="true">&larr;</span> Sebelumnya
+        </button>
+        <button id="fullscreen-button" class="control-button fullscreen" type="button" aria-label="Layar penuh">
+          <span aria-hidden="true">&#9974;</span> Layar Penuh
+        </button>
+        <button id="next-button" class="control-button primary" type="button" aria-label="Lanjutkan slide">
+          Berikutnya <span aria-hidden="true">&rarr;</span>
+        </button>
+      </nav>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
