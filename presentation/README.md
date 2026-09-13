@@ -37,6 +37,6 @@ http://localhost:8000/
 1. Jalankan presentasi seperti langkah di atas.
 2. Buka `http://localhost:8000/?print=1`.
 3. Tekan `Command + P` pada macOS atau `Ctrl + P` pada Windows.
-4. Pilih `Save as PDF`, gunakan orientasi `Landscape`, dan aktifkan `Background graphics`.
+4. Pilih `Save as PDF` dan gunakan orientasi `Landscape`.
 
-Mode cetak menampilkan seluruh slide tanpa tombol navigasi dan tanpa kuis interaktif.
+Mode cetak menggunakan halaman A4 landscape dengan latar polos agar hasilnya konsisten di Safari dan Chrome. Mode ini menampilkan seluruh slide tanpa tombol navigasi dan tanpa kuis interaktif.

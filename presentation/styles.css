@@ -805,7 +805,13 @@ button {
   }
 
   .hero-art {
-    display: none;
+    display: grid;
+    height: min(30vh, 300px);
+    min-height: 220px;
+  }
+
+  .hero-art img {
+    max-width: 46%;
   }
 
   .slide-title,
@@ -892,8 +898,15 @@ button {
 
 @media print {
   @page {
-    size: landscape;
+    size: A4 landscape;
     margin: 0;
+  }
+
+  *,
+  *::before,
+  *::after {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 
   html,
@@ -901,7 +914,7 @@ button {
     width: 100%;
     height: auto;
     overflow: visible;
-    background: var(--cream);
+    background: #fffaf1 !important;
   }
 
   .presentation,
@@ -912,11 +925,29 @@ button {
   }
 
   .print-page {
-    width: 100%;
-    height: 100vh;
+    width: 297mm;
+    height: 210mm;
     min-height: 0;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
+    padding: 10mm 14mm 8mm;
+    background: #fffaf1 !important;
+  }
+
+  .presentation::before,
+  .presentation::after,
+  .hero-art::before,
+  .image-frame::after {
+    display: none !important;
+  }
+
+  .image-frame,
+  .dual-images img,
+  .summary-image,
+  .info-card,
+  .step-card,
+  .traffic-card,
+  .condition-card,
+  .scenario {
+    box-shadow: none;
   }
 
   .print-page:last-child {
